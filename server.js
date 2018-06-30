@@ -37,7 +37,11 @@ res.render('home.hbs',{
   pgtitle:'New Page'
 });
 });
-
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    pgtitle:'Project Page'
+  });
+});
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
     pageTitle:'About Page Title'
